@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> sorting intro</title>
+    <link rel="stylesheet" href="s.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text">Sorting Intro</div>
+      <ul>
+        <li class="active"><a href="sortingint.html">Introduction</a></li>
+        <li><a href="#">Binary Heap</a></li>
+        <li><a href="#">Quick Sort</a></li>
+        <li><a href="#">Stable Shorting</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+      <div class="header">What is Sorting?</div>
+     <p>
+        Sorting can be done on names, numbers and records. Sorting reduces the For example, it is relatively easy to look up the phone number of a friend from a telephone dictionary because the names in the phone book have been sorted into alphabetical order.
+
+This example clearly illustrates one of the main reasons that sorting large quantities of information is desirable. That is, sorting greatly improves the efficiency of searching. If we were to open a phone book, and find that the names were not presented in any logical order, it would take an incredibly long time to look up someone’s phone number.
+     </p>
+    </div>
+
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.serv-bt').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+</html>
