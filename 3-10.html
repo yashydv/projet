@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <title>SELENIUM-Commands</title>
+  </head>
+  <body>
+   
+   <div class="wrapper">
+   	<nav id="sidebar">
+   		<div class="sidebar-header">
+   			<h3>IDE-Commands</h3>
+   		</div>
+   		
+   		
+   		<ul class="list-unstyled components">
+   			
+   			<li>
+   				<a href="3.html">Introduction</a>
+   				
+   			</li>
+   			
+   			<li>
+   				<a href="3-1.html"  >Terminology</a>
+   			</li>
+
+         <li>
+          <a href="3-2.html">Features</a>
+        </li>
+        <li>
+          <a href="3-3.html">Limitations</a>
+        </li>
+
+
+        <li>
+          <a href="3-4.html" >QTP</a>
+        </li>
+        <li>
+          <a href="3-5.html">Tool Suite</a>
+        </li>
+
+
+        <li>
+          <a href="3-6.html">IDE</a>
+        </li>
+        <li>
+          <a href="3-7.html" >IDE-Installation</a>
+        </li>
+
+
+        <li>
+          <a href="3-8.html">IDE-Feature</a>
+        </li>
+        <li>
+          <a href="3-9.html">IDE-TestCase</a>
+        </li>
+
+
+        <li>
+          <a href="3-10.html" style="background-color: #32c8de">IDE-Commands</a>
+        </li>
+       
+
+
+
+
+   			<li>
+   				<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="color: red" >Interview Q/A's</a>
+   				<ul class="collapse list-unstyled" id="pageSubmenu">
+   					<li>
+   					<a href="SI-1.html">Basic</a>
+            </li>
+            <li>
+              <a href="SI-2.HTML">Average</a>
+            </li>
+            <li>
+              <a href="SI-3.HTML">Advance</a>
+   					</li>
+   				</ul> 
+   			</li>
+   			
+   		</ul>
+   		
+   		<ul class="list-unstyled CTAs">
+   			<li>
+   				<a href="2.html" class="download">PROGRAMMS</a>
+   			</li>
+   			<li>
+   				<a href="index.html" class="article">HOME</a>
+   			</li>
+   		</ul>
+   	</nav>
+   	
+   	<div class="content">
+   		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   		
+   		<button type="button" id="sidebarCollapse" class="btn btn-info">
+   			<i class="fa fa-align-justify"></i> <span> </span>
+   		</button>
+   		
+  <!--<a class="navbar-brand" href="#">Navbar</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="INDEX.HTML">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="3-11.html">NEXT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="3-9.html">PREVIOUS</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="2.HTML">Programs<span class="sr-only">(current)</span></a>
+      </li>
+    
+    </ul>
+  </div>
+</nav>
+  	
+  	
+  	
+  	<h2>COMMANDS</h2><br>
+  	
+   <h4> add selection</h4>
+Add a selection to the set of options in a multi-select element.
+
+arguments
+
+locator: An element locator.
+
+value: The value to input.
+<div class="line"></div><br>
+
+<h4>answer on next prompt<h4>
+Affects the next alert prompt. This command will send the specified answer string to it. If the alert is already present, then use "webdriver answer on visible prompt" instead.
+
+arguments
+
+answer: The answer to give in response to the prompt pop-up.
+<div class="line"></div><br>
+<h4>assert<h4>
+Check that a variable is an expected value. The variable's value will be converted to a string for comparison. The test will stop if the assert fails.
+
+arguments
+
+variable name: The name of a variable without brackets.
+
+expected value: The result you expect a variable to contain (e.g., true, false, or some other value).
+
+<div class="line"></div><br>
+
+
+<h4>assert alert<h4>
+Confirm that an alert has been rendered with the provided text. The test will stop if the assert fails.
+
+arguments
+
+alert text: text to check
+<h4>assert checked<h4>
+Confirm that the target element has been checked. The test will stop if the assert fails.
+
+arguments
+
+locator: An element locator.
+<h4>assert confirmation<h4>
+Confirm that a confirmation has been rendered. The test will stop if the assert fails.
+
+arguments
+
+text: The text to use.
+<h4>assert editable<h4>
+Confirm that the target element is editable. The test will stop if the assert fails.
+
+arguments
+
+locator: An element locator.
+<h4>assert element present<h4>
+Confirm that the target element is present somewhere on the page. The test will stop if the assert fails.
+
+arguments
+
+locator: An element locator.
+<h4>assert element not present<h4>
+Confirm that the target element is not present anywhere on the page. The test will stop if the assert fails.
+
+arguments
+
+locator: An element locator.
+<h4>assert not checked<h4>
+Confirm that the target element has not been checked. The test will stop if the assert fails.
+
+arguments
+
+locator: An element locator.
+<h4>assert not editable<h4>
+Confirm that the target element is not editable. The test will stop if the assert fails.
+
+arguments
+
+locator: An element locator.
+<h4>assert not selected value<h4>
+Confirm that the value attribute of the selected option in a dropdown element does not contain the provided value. The test will stop if the assert fails.
+
+arguments
+
+select locator: An element locator identifying a drop-down menu.
+
+text: An exact string match. Support for pattern matching is in the works. See https://github.com/SeleniumHQ/selenium-ide/issues/141 for details.
+
+<h4>assert not text<h4>
+Confirm that the text of an element does not contain the provided value. The test will stop if the assert fails.
+
+arguments
+
+locator: An element locator.
+
+text: An exact string match. Support for pattern matching is in the works. See https://github.com/SeleniumHQ/selenium-ide/issues/141 for details.
+
+<h4>assert prompt<h4>
+Confirm that a JavaScript prompt has been rendered. The test will stop if the assert fails.
+
+arguments
+
+text: The text to use.
+<h4>assert selected value<h4>
+Confirm that the value attribute of the selected option in a dropdown element contains the provided value. The test will stop if the assert fails.
+
+arguments
+
+select locator: An element locator identifying a drop-down menu.
+
+text: An exact string match. Support for pattern matching is in the works. See https://github.com/SeleniumHQ/selenium-ide/issues/141 for details.
+
+<h4>assert selected label<h4>
+Confirm that the label of the selected option in a dropdown element contains the provided value. The test will stop if the assert fails.
+
+arguments
+
+select locator: An element locator identifying a drop-down menu.
+
+text: An exact string match. Support for pattern matching is in the works. See https://github.com/SeleniumHQ/selenium-ide/issues/141 for details.
+
+<h4>assert text<h4>
+Confirm that the text of an element contains the provided value. The test will stop if the assert fails.
+
+arguments
+
+locator: An element locator.
+
+text: An exact string match. Support for pattern matching is in the works. See https://github.com/SeleniumHQ/selenium-ide/issues/141 for details.
+
+<h4>assert title<h4>
+Confirm the title of the current page contains the provided text. The test will stop if the assert fails.
+
+arguments
+
+text: An exact string match. Support for pattern matching is in the works. See https://github.com/SeleniumHQ/selenium-ide/issues/141 for details.
+<h4>assert value<h4>
+Confirm the (whitespace-trimmed) value of an input field (or anything else with a value parameter). For checkbox/radio elements, the value will be "on" or "off" depending on whether the element is checked or not. The test will stop if the assert fails.
+
+arguments
+
+locator: An element locator.
+
+text: An exact string match. Support for pattern matching is in the works. See https://github.com/SeleniumHQ/selenium-ide/issues/141 for details.
+
+<h4>check<h4>
+Check a toggle-button (checkbox/radio).
+
+arguments
+
+locator: An element locator.
+<h4>choose cancel on next confirmation<h4>
+Affects the next confirmation alert. This command will cancel it. If the alert is already present, then use "webdriver choose cancel on visible confirmation" instead.
+
+<h4>choose cancel on next prompt<h4>
+Affects the next alert prompt. This command will cancel it. If the alert is already present, then use "webdriver choose cancel on visible prompt" instead.
+
+<h4>choose ok on next confirmation<h4>
+Affects the next confirmation alert. This command will accept it. If the alert is already present, then use "webdriver choose ok on visible confirmation" instead.
+
+<h4>click<h4>
+Clicks on a target element (e.g., a link, button, checkbox, or radio button).
+
+arguments
+
+locator: An element locator.
+<h4>click at<h4>
+Clicks on a target element (e.g., a link, button, checkbox, or radio button). The coordinates are relative to the target element (e.g., 0,0 is the top left corner of the element) and are mostly used to check effects that relay on them, for example the material ripple effect.
+
+arguments
+
+locator: An element locator.
+
+coord string: Specifies the x,y position (e.g., - 10,20) of the mouse event relative to the element found from a locator.
+
+<h4>close<h4>
+Closes the current window. There is no need to close the initial window, IDE will re-use it; closing it may cause a performance penalty on the test.
+
+<h4>debugger<h4>
+Breaks the execution and enters debugger
+
+<h4>do<h4>
+Create a loop that executes the proceeding commands at least once. Terminate the branch with the repeat if command.
+
+<h4>double click<h4>
+Double clicks on an element (e.g., a link, button, checkbox, or radio button).
+
+arguments
+
+locator: An element locator.
+<h4>double click at<h4>
+Double clicks on a target element (e.g., a link, button, checkbox, or radio button). The coordinates are relative to the target element (e.g., 0,0 is the top left corner of the element) and are mostly used to check effects that relay on them, for example the material ripple effect.
+
+arguments
+
+locator: An element locator.
+
+coord string: Specifies the x,y position (e.g., - 10,20) of the mouse event relative to the element found from a locator.
+
+<h4>drag and drop to object</h4>
+Drags an element and drops it on another element.
+
+arguments
+
+locator of object to be dragged: The locator of element to be dragged.
+
+locator of drag destination object: The locator of an element whose location (e.g., the center-most pixel within it) will be the point where locator of object to be dragged is dropped.
+
+<h4>echo<h4>
+Prints the specified message into the third table cell in your Selenese tables. Useful for debugging.
+
+arguments
+
+message: The message to print.
+<h4>edit content<h4>
+Sets the value of a content editable element as if you typed in it.
+
+arguments
+
+locator: An element locator.
+
+value: The value to input.
+
+<h4>else<h4>
+Part of an if block. Execute the commands in this branch when an if and/or else if condition are not met. Terminate the branch with the end command.
+
+<h4>else if<h4>
+Part of an if block. Execute the commands in this branch when an if condition has not been met. Terminate the branch with the end command.
+
+arguments
+
+conditional expression: JavaScript expression that returns a boolean result for use in control flow commands.
+<h4>end<h4>
+Terminates a control flow block for if, while, and times.
+
+<h4>execute script<h4>
+Executes a snippet of JavaScript in the context of the currently selected frame or window. The script fragment will be executed as the body of an anonymous function. To store the return value, use the 'return' keyword and provide a variable name in the value input field.
+
+arguments
+
+script: The JavaScript snippet to run.
+
+variable name: The name of a variable without brackets.
+
+<h4>execute async script<h4>
+Executes an async snippet of JavaScript in the context of the currently selected frame or window. The script fragment will be executed as the body of an anonymous function and must return a Promise. The Promise result will be saved on the variable if you use the 'return' keyword.
+
+arguments
+
+script: The JavaScript snippet to run.
+
+variable name: The name of a variable without brackets.
+
+<h4>for each<h4>
+Create a loop that executes the proceeding commands for each item in a given collection.
+
+arguments
+
+array variable name: The name of a variable containing a JavaScript array.
+
+iterator variable name: The name of the variable used when iterating over a collection in a looping control flow command (e.g., for each).
+
+<h4>if<h4>
+Create a conditional branch in your test. Terminate the branch with the end command.
+
+arguments
+
+conditional expression: JavaScript expression that returns a boolean result for use in control flow commands.
+<h4>mouse down<h4>
+Simulates a user pressing the left mouse button (without releasing it yet).
+
+arguments
+
+locator: An element locator.
+<h4>mouse down at<h4>
+Simulates a user pressing the left mouse button (without releasing it yet) at the specified location.
+
+arguments
+
+locator: An element locator.
+
+coord string: Specifies the x,y position (e.g., - 10,20) of the mouse event relative to the element found from a locator.
+
+<h4>mouse move at<h4>
+Simulates a user pressing the mouse button (without releasing it yet) on the specified element.
+
+arguments
+
+locator: An element locator.
+
+coord string: Specifies the x,y position (e.g., - 10,20) of the mouse event relative to the element found from a locator.
+
+<h4>mouse out<h4>
+Simulates a user moving the mouse pointer away from the specified element.
+
+arguments
+
+locator: An element locator.
+<h4>mouse over<h4>
+Simulates a user hovering a mouse over the specified element.
+
+arguments
+
+locator: An element locator.
+<h4>mouse up<h4>
+Simulates the event that occurs when the user releases the mouse button (e.g., stops holding the button down).
+
+arguments
+
+locator: An element locator.
+<h4>mouse up at<h4>
+Simulates the event that occurs when the user releases the mouse button (e.g., stops holding the button down) at the specified location.
+
+arguments
+
+locator: An element locator.
+
+coord string: Specifies the x,y position (e.g., - 10,20) of the mouse event relative to the element found from a locator.
+
+<h4>open<h4>
+Opens a URL and waits for the page to load before proceeding. This accepts both relative and absolute URLs.
+
+arguments
+
+url: The URL to open (may be relative or absolute).
+<h4>pause<h4>
+Wait for the specified amount of time.
+
+arguments
+
+wait time: The amount of time to wait (in milliseconds).
+<h4>remove selection<h4>
+Remove a selection from the set of selected options in a multi-select element using an option locator.
+
+arguments
+
+locator: An element locator.
+
+option: An option locator, typically just an option label (e.g. "John Smith").
+  <div class="line"></div><br>
+      
+  
+  	
+   	</div>
+   	
+   	
+   	
+   	
+   	
+   </div>
+    
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script>
+	    $(document).ready(function(){
+			$('#sidebarCollapse').on('click',function(){
+				$('#sidebar').toggleClass('active');
+			});
+		});  
+	</script>
+    
+    
+    
+    
+    
+  </body>
+</html>
